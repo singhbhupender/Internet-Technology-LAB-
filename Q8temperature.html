@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Temperature conversion</title>
+<script type="text/javascript">
+function getFar(f1)
+{
+	var C=f1.Cel.value,F;
+	F=C*(9/5)+32;
+	f1.Far.value=F;
+}
+function getCel(f1)
+{
+	var F=f1.Far.value,C;
+	C=(F-32)*(5/9);
+	f1.Cel.value=C;
+}
+</script>
+</head>
+<body>
+<center>
+<form>
+<input type="text" name="Cel" value="" onblur="getFar(this.form)">CELSIUS<br><br>
+<input type="text" name="Far" value="" onblur="getCel(this.form)">FARHENEIT<br><br>
+</form>
+</center>
+</body>
+</html>

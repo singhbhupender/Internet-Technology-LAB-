@@ -1,0 +1,26 @@
+<head>
+<title>Factorial</title>
+<script type="text/javascript">
+function digit_sum(F1)
+{
+	var n=F1.number.value,s=0,digit;
+	while(n>=1)
+	{
+		digit=n%10;
+		s=s+digit;
+		n=n/10;
+		n=parseInt(n);	
+	}
+	F1.sum.value=s;
+}
+</script>
+</head>
+<body>
+<center>
+<form>
+<input type="text" name="number" value="" onchange="digit_sum(this.form)">   ENTER NO. <br><br>
+<input type="text" name="sum" value="">    SUM<br><br>   
+</form>
+</center>
+</body>
+</html>

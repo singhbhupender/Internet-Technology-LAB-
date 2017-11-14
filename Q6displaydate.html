@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Q1 Display Date in Textbox</title>
+<script type="text/javascript">
+function DisplayDate(f1)
+{
+	var mydate=new Date();
+	f1.display_date.value=mydate;
+
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" name="display_date" size="100" value="" onfocus="DisplayDate(this.form)"> Date
+</form>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<head>
+<title>SERIES SUM</title>
+<script type="text/javascript">
+function sum(F1)
+{
+	var n=F1.terms.value,fact=1,s=0.0;
+	for(var i=1;i<=n;i++)
+	{
+		for(var j=1;j<=i;j++)
+			fact=fact*j;
+		s=s+(i/fact);
+		fact=1;
+	}
+	F1.Series_sum.value=s;
+}
+</script>
+</head>
+<body>
+<center>
+<form>
+<input type="text" name="terms" value="" onchange="sum(this.form)">   ENTER NO. OF TERMS<br><br>
+<input type="text" name="Series_sum" value="">    SUM<br><br>   
+</form>
+</center>
+</body>
+</html>
